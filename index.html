@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Rabbani</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<div id="app">
+		<div class="container">
+			<div v-if="showall">
+				<div class="typewriter" v-if="showTypeWriter"> 
+					<h1>console.log('Hi, '+'\n'+'I am Golam Rabbani')</h1><br>
+				</div>
+
+				<div v-else class="afterwrite">
+					<h1 class="white">Hi, </h1>
+					<h1 class="white">I am Golam Rabbani</h1>
+					<h5 class="white2">A full stack NodeJS Developer</h5>
+				</div>
+			</div>
+			<div v-else>
+				<div class="decoration">
+			   		<!-- <h2 class="text"><strong>Thanks</strong> For Being Intrested To know about me</h2> -->
+				</div>
+				<a href="profile.html">
+					<div class="wrapper">
+
+							<p class="glitch_fixed">
+								<span>C</span>
+								<span>L</span>
+								<span>I</span>
+								<span>C</span>
+								<span>K</span>
+							</p>
+
+							<p class="glitch">
+									<span>C</span>
+									<span>L</span>
+									<span>I</span>
+									<span>C</span>
+									<span>K</span>
+							</p>
+
+							<p class="glitch_opacity">
+								<span>C</span>
+								<span>L</span>
+								<span>I</span>
+								<span>C</span>
+								<span>K</span>
+							</p>
+
+							<p class="glitch">
+									<span>C</span>
+									<span>L</span>
+									<span>I</span>
+									<span>C</span>
+									<span>K</span>
+							</p>
+						</div>
+				</a>
+
+				<p class="textdec">Please Click on the text below</p>
+			</div>
+		</div>
+
+		
+	</div>
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+<script>
+ let app = new Vue({
+	el:'#app',
+	data:{
+		showTypeWriter: true,
+		showall: true,
+	},
+	mounted(){
+		setTimeout(()=>{
+            this.showTypeWriter = false;
+		},5000)
+
+		setTimeout(()=>{
+            this.showall = false;
+		},8000)
+	},
+	
+	methods:{
+
+	}
+ })
+</script>
+</body>
+</html>
