@@ -1,0 +1,261 @@
+
+#modal-skew-from-left {
+	top: 50%;
+	left: 0;
+	transform: skewX(40deg) translate(-200%, -50%);
+	transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #modal-skew-from-left.show {
+	left: 50%;
+	transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+	transform: translate(-50%, -50%);
+  }
+  
+  #modal-skew-from-top {
+	top: 0;
+	left: 50%;
+	transform: skewY(40deg) translate(-50%, -200%);
+	transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #modal-skew-from-top.show {
+	top: 50%;
+	transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+	transform: translate(-50%, -50%);
+  }
+  
+  #modal-flip-from-left {
+	top: 50%;
+	left: -200%;
+	transform: translate(-50%, -50%);
+  }
+  #modal-flip-from-left.show {
+	left: 50%;
+	animation: modal-flip-from-left-show 1s;
+  }
+  #modal-flip-from-left.hide {
+	left: -200%;
+	transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  @keyframes modal-flip-from-left-show {
+	0% {
+	  left: -200%;
+	  transform: translate(-50%, -50%) rotateY(-180deg);
+	}
+	80% {
+	  transform: translate(-50%, -50%) rotateY(-180deg);
+	}
+	90% {
+	  left: 50%;
+	  transform: translate(-50%, -50%) rotateY(-90deg);
+	}
+	100% {
+	  transform: translate(-50%, -50%) rotateY(0deg);
+	}
+  }
+  #modal-flip-from-top {
+	top: -200%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+  #modal-flip-from-top.show {
+	top: 50%;
+	animation: modal-flip-from-top-show 1s;
+  }
+  #modal-flip-from-top.hide {
+	top: -200%;
+	transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  @keyframes modal-flip-from-top-show {
+	0% {
+	  top: -200%;
+	  transform: translate(-50%, -50%) rotateX(-180deg);
+	}
+	80% {
+	  transform: translate(-50%, -50%) rotateX(-180deg);
+	}
+	90% {
+	  top: 50%;
+	  transform: translate(-50%, -50%) rotateX(-90deg);
+	}
+	100% {
+	  transform: translate(-50%, -50%) rotateX(0deg);
+	}
+  }
+  #modal-zoom-in {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	transition: all 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  }
+  #modal-zoom-in.show {
+	transform: translate(-50%, -50%) scale(1);
+	transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  #modal-drop-in {
+	top: -200%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+  #modal-drop-in.show {
+	top: 50%;
+	animation: bounce-out 1s;
+  }
+  
+  @keyframes bounce-out {
+	0% {
+	  top: -200%;
+	}
+	25% {
+	  top: 50%;
+	}
+	40% {
+	  top: 35%;
+	}
+	55% {
+	  top: 50%;
+	}
+	70% {
+	  top: 42%;
+	}
+	85% {
+	  top: 50%;
+	}
+	95% {
+	  top: 48%;
+	}
+	100% {
+	  top: 50%;
+	}
+  }
+  /* Extra stuff just to make the demo pretty. */
+  body {
+	padding: 50px 0;
+	color: #fff;
+	font-family: 'Helvetica', serif;
+	font-size: 14px;
+	text-align: center;
+	line-height: 24px;
+	background: #273552;
+	perspective: 2500px;
+	transform-style: preserve-3d;
+  }
+  
+  h1 {
+	margin-bottom: 75px;
+	font-size: 55px;
+	line-height: 1.2;
+  }
+  
+  h2 {
+	margin: 0 0 25px;
+  }
+  
+  footer {
+	margin: 75px 0 35px;
+  }
+  
+  a {
+	color: #13A865;
+	text-decoration: none;
+  }
+  a:hover {
+	color: #22e68e;
+  }
+  
+  form label {
+	display: block;
+	margin-bottom: 10px;
+  }
+  form input {
+	margin-left: 10px;
+  }
+  form input[type="submit"] {
+	margin: 0;
+	padding: 6px 20px;
+	color: #333;
+  }
+  
+  .buttons {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+  }
+  .buttons li {
+	width: 50%;
+	margin: 0 auto 30px;
+	float: left;
+	padding-bottom: 30px;
+	/* border-bottom: 1px solid #6C7994; */
+  }
+  .buttons button {
+	padding: 6px 20px;
+	background: #fff;
+	border: none;
+	border-radius: 4px;
+	color: #333;
+  }
+  
+  .modal-background {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(69, 69, 69, 0.7);
+	opacity: 0;
+	pointer-events: none;
+  }
+  .modal-background.show {
+	display: block;
+	opacity: 1;
+	pointer-events: auto;
+	animation: fadein 0.8s;
+  }
+  .modal-background.hide {
+	animation: fadeout 0.8s;
+  }
+  
+  @keyframes fadein {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+  }
+  @keyframes fadeout {
+	from {
+	  opacity: 1;
+	}
+	to {
+	  opacity: 0;
+	}
+  }
+  .modal {
+	position: absolute;
+	padding: 35px;
+	box-shadow: 0px 0px 8px 0px #333;
+	background: #875794;
+	color: #fff;
+	text-align: left;
+	transform-style: preserve-3d;
+  }
+  .modal .face-3d {
+	backface-visibility: hidden;
+  }
+  .modal .back-3d {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	background: #875794;
+	transform: rotateY(180deg);
+  }
+  
