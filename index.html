@@ -1,97 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Rabbani</title>
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link href="style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Resume - Golam Rabbani</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.css" rel="stylesheet">
 </head>
-<body>
-	<div id="app">
-		<div class="container">
-			<div v-if="showall">
-				<div class="typewriter" v-if="showTypeWriter"> 
-					<h1>console.log('Hi, '+'\n'+'I am Golam Rabbani')</h1><br>
-				</div>
 
-				<div v-else class="afterwrite">
-					<h1 class="white">Hi, </h1>
-					<h1 class="white">I am Golam Rabbani</h1>
-					<h5 class="white2">A full stack NodeJS Developer</h5>
-				</div>
-			</div>
-			<div v-else>
-				<div class="decoration">
-			   		<!-- <h2 class="text"><strong>Thanks</strong> For Being Intrested To know about me</h2> -->
-				</div>
-				<a href="profile.html">
-					<div class="wrapper">
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#research">Research</a>
+        </li>
 
-							<p class="glitch_fixed">
-								<span>C</span>
-								<span>L</span>
-								<span>I</span>
-								<span>C</span>
-								<span>K</span>
-							</p>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="research-paper.html" target="blank">View Research paper</a>
+        </li>
 
-							<p class="glitch">
-									<span>C</span>
-									<span>L</span>
-									<span>I</span>
-									<span>C</span>
-									<span>K</span>
-							</p>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
 
-							<p class="glitch_opacity">
-								<span>C</span>
-								<span>L</span>
-								<span>I</span>
-								<span>C</span>
-								<span>K</span>
-							</p>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="resume.html">Resume</a>
+        </li>
 
-							<p class="glitch">
-									<span>C</span>
-									<span>L</span>
-									<span>I</span>
-									<span>C</span>
-									<span>K</span>
-							</p>
-						</div>
-				</a>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="https://medium.com/@rabbanisarkar15204" target="blank">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-				<p class="textdec">Please Click on the text below</p>
-			</div>
-		</div>
+  <div class="container-fluid p-0">
 
-		
-	</div>
-	
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
-<script>
- let app = new Vue({
-	el:'#app',
-	data:{
-		showTypeWriter: true,
-		showall: true,
-	},
-	mounted(){
-		setTimeout(()=>{
-            this.showTypeWriter = false;
-		},5000)
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Golam
+          <span class="text-primary">Rabbani</span>
+        </h1>
+        <div class="subheading mb-5">Dhaka, Bangladesh
+          <a href="rabbani15204@gmail.com">rabbani15204@gmail.com</a>
+        </div>
+        <p class="lead mb-5" style="color: green">
+          I have 5 years of Programming experience, I have attended many Programming Contest all over my University life
+          ( Inter
+          University Programming Contest IUT, SUST). I have solved more than 400 problem from various online judges (
+          UVA, Code Forces,
+          LightOJ ).
+          I have more than two years of development practice with most popular technology like Node.js, Django.
+          Currently I am working as Node.js Developer from January 2018 to now.
+          .</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/rabbani-sarkar-704b74111/" target="blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/rabbani204" target="blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://stackoverflow.com/users/6277478/mad-max" target="blank">
+            <i class="fab fa-stack-overflow"></i>
+          </a>
+          <a href="https://www.facebook.com/rabbani.sarkar.543" target="blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </section>
 
-		setTimeout(()=>{
-            this.showall = false;
-		},8000)
-	},
-	
-	methods:{
+    <hr class="m-0">
 
-	}
- })
-</script>
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5 colorgreen" style="color: green">Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0" style="color:#81C784">Node.JS Developer</h3>
+            <a href="www.shuttlebd.com" target="blank">
+              <div class="subheading mb-3">Shuttle - BD</div>
+            </a>
+            <p style="color: green">I am working here as a Node.JS Developer. I am working with Node<br>( Express,
+              Angualr )</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">January 2020 - Present</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0" style="color:#81C784">Node.JS Developer</h3>
+            <a href="www.yoda.com.bd">
+              <div class="subheading mb-3">Yoda-BD</div>
+            </a>
+            <p style="color: green">
+              Research & Development team.
+              1 . Write clean, scalable and well-documented code.
+              2. Build real-time applications with WebSockets, WebRtc.
+              3 . Back-end Technologies : Node, Express, Socket.io.
+              4. Front-end Technologies : Vue, Nuxt
+              5. Others: Mongodb, MySQL, Bitbucket, Trello
+            </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">September 2019 - December 2019</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0" style="color:#81C784">Node.JS Developer</h3>
+            <a href="www.notionsoft.io">
+              <div class="subheading mb-3">Notionsoft</div>
+            </a>
+            <p style="color: green">I am working here as a Node.JS Developer. I am working with Node<br>( Express,
+              Angualr, Vuejs, Vuetify, Vuex, Ionic)</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">January 2018 - Auguest 2019</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0" style="color:#81C784">Traineer</h3>
+            <a href="#">
+              <div class="subheading mb-3">Team ICT71</div>
+            </a>
+            <p style="color: green;">I love to working with Programming. When I was a studying at <strong>Daffodil
+                Internation University</strong> I worked with ICT71. A volubteer organization for the student. ICT71
+              work with <strong>Programming Language</strong>, <strong>Problem
+                solving</strong>,<strong>Algorithms</strong></p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">December 2015 - Present</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="research">
+      <div class="w-100">
+        <h2 class="mb-5" style="color: green">Research Paper</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0" style="color: green">Performance Measurement of Multiple Supervised Learning Algorithms for
+              Bengali News Headline Sentiment Classification</h3>
+            <div style="color: #81C784">
+              Abstract— The reading newspaper is a common habit in
+              today’s life. Before reading news article all are focused on the
+              news headline. Understanding the meaning of news headline
+              everybody can easily identify the news types. That means the
+              containing news article provides positive or negative news.
+              Analysis of the sentiment of the news headline is a good
+              solution for this kind of problem. Sentiment Analysis is a
+              chief part of Natural Language Processing. It mines any kinds
+              of opinion and set the sentiment of any text. We proposed a
+              method for Bengali news headline sentiment measurement
+              with different kinds of the supervised learning algorithm and
+              their performance. Firstly, we set sentiment of each news
+              headline then used the classification method to predicting the
+              news headline which was containing a positive or negative
+              headline. After all, Bengali is one of the most used languages
+              in this world. A lot of research work done previously in a
+              different language but very few in the Bengali language. So,
+              increasing the Bengali language research resource need to
+              develop different kinds of tools and technology.
+              Keywords: Sentiment Analysis, Natural Language Processing,
+              Opinion Mining, Bengali News Headline Sentiment</div><br>
+            <p style="color: green">
+              Proceedings of the SMART–2019, IEEE Conference ID: 46866
+            </p>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0" style="color: green">Comparative Sentiment Analysis using Difference Types of Machine
+              Learning Algorithm</h3>
+            <div style="color: #81C784">
+              Abstract—In today’s world business are becoming online
+              based. Companies sell their products and seek for consumer’s
+              feedback. When all the consumer writes their review about
+              that’s a product, It’s becomes difficult to say that product is
+              good or not based on their review. That’s where Deep learning
+              come. By using this, we can extract opinion or sentiment from
+              the text which is written by the consumer. This is sentiment
+              analysis. It can classify the emotional status of that review.
+              Our project detects opinion from consumer’s review whether
+              it is good or bad. We use SVM, Naive Bayes algorithm and
+              some methods. We use the Naive Bayes algorithm because we
+              want to know how often words occur in the document. And
+              then we use SVM for classifying whether words are positive
+              or negative. For our researching purpose, we use the Amazon
+              consumer review data set, which was available online. Some
+              methods that we are using for preprocessing and cleaned the
+              document where just words are left. We trained our model so
+              well with twenty-four thousand data. So, it will give us the best
+              accuracy and we make this model with the best algorithm and
+              after that, it gives the accuracy of 98.39%. This project will
+              help us in real life when we are having trouble with product
+              reviews. Our machine will help us to determine which review
+              is good and which review is bad and make a category of a
+              positive and negative review and saves our time.
+              Keywords: NaïveBayes, SVM, KNN, Polarity, Sentiment,
+              Positive, Negative, Word, Paragraph, Accuracy</div><br>
+            <p style="color: green">
+              Proceedings of the SMART–2019, IEEE Conference ID: 46866
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5" style="color: green">Education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0" style="color: green">Daffodil International University</h3>
+            <div class="subheading mb-3" style="color:#81C784">Bachelor of Science</div>
+            <div style="color: green">Computer Science And Engineering</div>
+            <p style="color: green">GPA: 2.70</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">January 2015 - December 2018</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0" style="color: green">NFU School And college, Bogra</h3>
+            <div class="subheading mb-3" style="color:#81C784">HSC</div>
+            <p style="color: green">GPA: 4.10</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary" style="color: green">January 2011 - January 2013</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0" style="color: green">TKP BL High School</h3>
+            <div class="subheading mb-3" style="color:#81C784">SSC</div>
+            <p style="color: green">GPA: 4.00</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary" style="color: green">January 2006 - January 2011</span>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5" style="color: green">Skills</h2>
+
+        <div class="subheading mb-3" style="color:#81C784">Programming Languages &amp; Tools</div>
+        <h5 style="color: green">Programming Languages && Frameworks</h5>
+        <ul>
+          <li style="color: green;">JavaScript
+            <ul>
+              <li>Node</li>
+              <li>ExpressJS</li>
+              <li>VueJS</li>
+              <li>ReactJS</li>
+              <li>Vuetify</li>
+              <li>Vuex</li>
+              <li>Angular</li>
+              <li>Ionic3/Cordova</li>
+            </ul>
+          </li>
+          <li style="color: #81C784;">Python
+            <ul>
+              <li>Flask</li>
+            </ul>
+          </li>
+          <li style="color: #81C784;">C++</li>
+          <li style="color: #81C784;">C</li>
+        </ul>
+        <br>
+
+        <h5 style="color: green">Databases</h5>
+        <ul>
+          <li style="color: green">MYSQL</li>
+          <li style="color: green">PostgreeSQL</li>
+          <li style="color: #81C784;">MongoDB</li>
+        </ul>
+        <br>
+
+        <h5 style="color: #81C784;">Tools</h5>
+        <ul>
+          <li style="color: green">SAAS</li>
+          <li style="color: #81C784;">Agile</li>
+          <li style="color: #81C784;">Trello</li>
+          <li style="color: green">Visual Studio Code</li>
+          <li style="color: #81C784;">Linux</li>
+          <li style="color: green">Pycharm</li>
+          <li style="color: #81C784;">DigitalOcean</li>
+          <li style="color: green">Docker</li>
+          <li style="color: #81C784;">Git</li>
+          <li style="color: green">Bitbucket</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5" style="color: green">Interests</h2>
+        <p>I love to play with technologys.To me most intresting thing is learning new techonology, And work with that.
+          I love to contribute Open source<br> <br>
+
+          In my free time I love to play Video Game and Guitar.
+        </p>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <!-- <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+      <div class="w-100">
+        <h2 class="mb-5">Awards &amp; Certifications</h2>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Google Analytics Certified Developer</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Mobile Web Specialist - Google Certification</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            2<sup>nd</sup>
+            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - James Buchanan High School - Hackathon 2006</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            3<sup>rd</sup>
+            Place - James Buchanan High School - Hackathon 2005</li>
+        </ul>
+      </div>
+    </section> -->
+
+  </div>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
 </body>
+
 </html>
+<!-- 
+<a class="navbar-brand js-scroll-trigger" href="#page-top">
+		<span class="d-block d-lg-none">Clarence Taylor</span>
+		<span class="d-none d-lg-block">
+		  <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+		</span>
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button> -->
