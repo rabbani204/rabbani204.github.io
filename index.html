@@ -71,7 +71,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="resume.html" target="blank"Resume</a>
+              <a class="nav-link js-scroll-trigger" href="resume.html" target="blank">Resume</a>
             </li>
 
             <li class="nav-item">
@@ -433,16 +433,30 @@
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
   <script>
     new Vue({
       el: "#app",
       data: {
-        loading: true
+        loading: true,
+        ipAddresses: []
       },
       mounted() {
+        this.getIp()
         setTimeout(() => {
           this.loading = false;
         }, 6000);
+      },
+      methods: {
+        getIp() {
+          fetch('https://api.ipify.org?format=json')
+.then(x => x.json())
+.then(({ ip }) => {
+    // this.term = ip;
+    console.log(ip)
+});
+
+        }
       }
     });
   </script>
