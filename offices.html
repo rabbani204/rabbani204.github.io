@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #888;
+        }
+
+
+        table.audio {
+            vertical-align: center;
+            margin-top: 10px;
+            padding-right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-0 col-md-3">
+            </div>
+            <div class="col-sm-12 col-md-6" style="margin-top: 3rem;">
+                <h1 style="margin-bottom: 1rem; text-align: center; color: white;">Office 1</h1>
+                <div class="content" style="background-color: thistle; padding: 2rem; margin-bottom: 1rem;">
+                    <div class="row">
+
+                    </div>
+                    <img src="photos/dn11.jpg" height="500" alt="">
+                </div>
+
+                <div class="content" style="background-color: thistle; padding: 2rem; margin-bottom: 1rem;">
+                    <div class="row">
+
+                    </div>
+                    <img src="photos/dn22.jpg" height="500" alt="">
+                </div>
+
+                <div class="content" style="background-color: thistle; padding: 2rem; margin-bottom: 1rem;">
+                    <div class="row">
+
+                    </div>
+                    <img src="photos/dn33.jpg" height="500" alt="">
+                </div>
+
+                <div class="content" style="background-color: thistle; padding: 2rem; margin-bottom: 1rem;">
+                    <div class="row">
+
+                    </div>
+                    <img src="photos/dn 44.jpg" height="500" alt="">
+                </div>
+            </div>
+
+            <div class="col-sm-0 col-md-3"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-0 col-md-3">
+            </div>
+            <div class="col-sm-12 col-md-6" style="margin-top: 3rem;">
+                <h1 style="margin-bottom: 1rem; text-align: center; color: white;">Office 2</h1>
+                <div class="content" style="background-color: thistle; padding: 2rem; margin-bottom: 1rem;">
+                    <div class="row">
+
+                    </div>
+                    <img src="photos/top-10.jpg" height="500" alt="">
+                </div>
+            </div>
+
+            <div class="col-sm-0 col-md-3"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-0 col-md-3">
+            </div>
+            <div class="col-sm-12 col-md-6" style="margin-top: 3rem;">
+                <h1 style="margin-bottom: 1rem; text-align: center; color: white;">Office 3</h1>
+                <div class="content" style="background-color: thistle; padding: 2rem; margin-bottom: 1rem;">
+
+                    <img src="photos/dn1.jpg" height="500" alt="">
+                </div>
+
+                <div class="content" style="background-color: thistle; padding: 2rem; margin-bottom: 1rem;">
+                    <div class="row">
+
+                    </div>
+                    <img src="photos/dn2.jpg" height="500" alt="">
+                </div>
+
+            </div>
+
+            <div class="col-sm-0 col-md-3"></div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-0 col-md-3">
+            </div>
+            <div class="col-sm-12 col-md-6" style="margin-top: 3rem;">
+                <h1 style="margin-bottom: 1rem; text-align: center; color: white;">Google - Japan</h1>
+                <div class="content" style="background-color: thistle; padding: 2rem; margin-bottom: 1rem;">
+                    <div class="row">
+
+                    </div>
+                    <img src="photos/google1.jpg" height="500" alt="">
+                </div>
+
+                <div class="content" style="background-color: thistle; padding: 2rem; margin-bottom: 1rem;">
+                    <div class="row">
+
+                    </div>
+                    <img src="photos/google.jpg" height="500" alt="">
+                </div>
+
+            </div>
+
+            <div class="col-sm-0 col-md-3"></div>
+        </div>
+    </div>
+
+    <script>
+        var audio = document.getElementsByTagName("audio");
+        for (let i = 0; i < audio.length; i++) {
+            audio[i].addEventListener('ended', function () {
+                if (audio[i].duration === audio[i].currentTime) {
+                    audio[i + 1].play();
+                }
+            });
+        }
+
+        //Stop and roll back to the beginning of all tracks except the player
+        document.addEventListener('play', function (d) {
+            var audio = document.getElementsByTagName('audio');
+            for (let i = 0; i < audio.length; i++) {
+                if (audio[i] != d.target) {
+                    audio[i].pause(); // may be deleted
+                    audio[i].load();
+                }
+            }
+        }, true);
+    </script>
+</body>
+
+</html>
