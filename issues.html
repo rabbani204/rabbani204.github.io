@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #888;
+        }
+
+
+        table.audio {
+            vertical-align: center;
+            margin-top: 10px;
+            padding-right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-0 col-md-3"></div>
+
+            <div class="col-sm-12 col-md-6" style="margin-top: 3rem;">
+                <h1 style="margin-bottom: 1rem; text-align: center; color: white;">More issues!!.</h1>
+
+                <div class="content" style="background-color: thistle; padding: 2rem; margin-bottom: 1rem;">
+                    <div class="row">
+                        <i class="fas fa-paragraph"></i>
+                        <p style="color: white;">OC of Gobindojang, Gaibandha saying that it's mental problem. He don't ask me any sample. Munna, Teachers and OC all people said to go for a Physicologist. Isn't it a preplaned. Why they all said that.</p>
+                    </div>
+                    <td valign="top"><audio class="audio" preload="none" controls>
+                            <source src="audios/others/26 Jun, 3.46 pm.mp3"
+                                type='audio/mpeg; codecs="mp3"'></audio>
+                    </td>
+
+                    <p>I am seeking for a good explanation. Why a intentionally bad pescription was given by Doctor Rafiqul Islam.</p>
+                </div>
+
+                <div class="content" style="background-color: thistle; padding: 2rem; margin-bottom: 1rem;">
+                    <div class="row">
+                        <i class="fas fa-paragraph"></i>
+                        <p style="color: white;">They reached every where I have gone. By doing this they have tryed to mean that, They can go every where I go. And they can create a bad sisutation there. Here an example..</p>
+                    </div>
+                    <img src="img/others/2.jpg" alt="" width="400">
+                    <img src="img/others/1.jpg" alt="" width="400">
+                    <p>I have applied for my Certificate and marksheet togeather. before delivery date I have seen, two document is ready to delivery. Next day when I reached to collect, They saying that I have applied for only Transcript Not for Certificate. In student portal showing that I have collect a parsital transcript urgently at 2018. That is impossiable because there was 40000tk due that time.</p>
+                </div>
+                
+                <div class="content" style="background-color: thistle; padding: 2rem; margin-bottom: 1rem;">
+                    <div class="row">
+                        <i class="fas fa-paragraph"></i>
+                        <p style="color: white;">Another issue related to above.</p>
+                    </div>
+                    
+                    <td valign="top"><audio class="audio" preload="none" controls>
+                            <source src="audios/others/Call@008801816-9(008801816965746)_20200419161407.mp3"
+                                type='audio/mpeg; codecs="mp3"'></audio>
+                    </td>
+                    <p>I was applying for higher study.I was needed a concern letter for confirmaiing that My graduation is complete.. It's already showing my student protal. After applying they asked for my bachelors, HSC, SSC transcript. At 2018 my SSC, HSC everything was stolen. and transcript was in my campus. It is not require that I have to submit transcript to collect That kinds of concern letter, It's just for harrasement. Luckly there was some old photocopys in my house. </p>
+                </div>
+
+                <div class="content" style="background-color: thistle; padding: 2rem; margin-bottom: 1rem;">
+                    <div class="row">
+                        <i class="fas fa-paragraph"></i>
+                        <p style="color: white;">Shabuddin still wanting that I will ask for his help.</p>
+                    </div>
+                    <td valign="top"><audio class="audio" preload="none" controls>
+                            <source src="audios/others/Call@Shabuddin Vai(01711903431)_20200705212741.mp3"
+                                type='audio/mpeg; codecs="mp3"'></audio>
+                    </td>
+                    <p>When I was working at theri company he wanted to help me. I have written a General Diary at Banani thana, as Shabuddin, companys owner Salman and SI Mehedi( Banani thana ) said me to do. After GD the problem become more serious. Companys owner threaten me and said that he has taken more two guy( They speek like woman ). it is also a threat to me. Indrictlly he saying me to behave like them. After working 3 month they fired me. Still Shabuddin wanting to help me but his owner said already I have to act like those guy.</p>
+                </div>
+
+                <div class="content" style="background-color: thistle; padding: 2rem; margin-bottom: 1rem;">
+                    <div class="row">
+                        <i class="fas fa-paragraph"></i>
+                        <p style="color: white;">My friend making fun about the matter of my Certificate stolling</p>
+                    </div>
+                    <td valign="top"><audio class="audio" preload="none" controls>
+                            <!-- <source src="audios.mp3" type='audio/mpeg; codecs="mp3"'></audio> -->
+                    </td>
+                </div>
+            </div>
+            <div class="col-sm-0 col-md-3"></div>
+        </div>
+    </div>
+    <script>
+        var audio = document.getElementsByTagName("audio");
+        for (let i = 0; i < audio.length; i++) {
+            audio[i].addEventListener('ended', function () {
+                if (audio[i].duration === audio[i].currentTime) {
+                    audio[i + 1].play();
+                }
+            });
+        }
+
+        //Stop and roll back to the beginning of all tracks except the player
+        document.addEventListener('play', function (d) {
+            var audio = document.getElementsByTagName('audio');
+            for (let i = 0; i < audio.length; i++) {
+                if (audio[i] != d.target) {
+                    audio[i].pause(); // may be deleted
+                    audio[i].load();
+                }
+            }
+        }, true);
+    </script>
+</body>
+
+</html>
